@@ -1,0 +1,128 @@
+/* base styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'BR Omega';
+}
+p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22.72px;
+    max-width: 500px;
+}
+h1 {
+    font-size: 52px;
+}
+/* body */
+
+body {
+    color: white;
+    width: 100%;
+    background-color: #2b193d;   
+    background-image: url(assets/lines.png);
+    background-repeat: no-repeat;
+    background-position-y: right;
+    background-position-x: right;
+    background-size: auto;
+}
+main {
+    width: 90%;
+    margin: auto;
+}
+header {
+    line-height: 120px;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70vh;
+}
+
+.hero-text > * + * {
+    margin-top: 2rem;
+}
+.hero-image img {
+    width: 100%;
+    min-width: 380px;
+}
+/* form styling */
+input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+}
+button {
+    padding: 14px 36px;
+    background-color: #4d685a;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 0.3em;
+}
+
+/* sections */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-grow: 1 1 auto;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    margin: auto;
+    min-height: 70vh;
+}
+section > * + * {
+  margin-top: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+
+section img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 500px;
+}
+section .text {
+    max-width: 500px;
+}
+section .text > * + * {  
+    margin-bottom: 2em;
+    margin-top: 1.5em;
+}
+section:nth-child(odd) {
+    flex-direction: row;
+    text-align: right;
+    margin-right: 0;
+}
+section:nth-child(even) {
+    flex-direction: row-reverse;
+    text-align: left;
+    margin-right: 0;
+}
+aside {
+    margin: 3em 0;
+}
+aside > * + * {
+    margin-top: 0.7em;
+    margin-bottom: 2em;
+}
+footer p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 12px !important;
+    color: #ccc;
+}
