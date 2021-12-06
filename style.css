@@ -64,8 +64,12 @@ header {
     min-width: 380px;
 }
 /* form styling */
+form {
+    display: flex;
+    max-width: 420px;
+}
 input {
-    width: 300px;
+    width: 100%;
     padding: 12px;
     border: 1px solid;
     border-radius: 4px;
