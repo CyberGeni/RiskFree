@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'BR Omega';
 }
 p {
     font-weight: 300;
@@ -30,7 +31,7 @@ h1 {
 /* body */
 
 body {
-    font-family: 'BR Omega';
+    
     color: white;
     width: 100%;
     background-color: #2b193d;   
@@ -142,27 +143,12 @@ footer p {
 
 
 /* the great media query */
-@media  (max-width: 1024px) {
 
-}
 @media  (max-width: 720px) {
     section {
-        display: flex;
-        flex-wrap: wrap;
-        flex-grow: 1 1 auto;
         align-items: center;
         justify-content: center;
         justify-items: center;
-        width: 100%;
-        margin: auto;
-        min-height: 70vh;
-    }
-    section .text {
-        max-width: 500px;
-    }
-    section .text > * + * {  
-        margin-bottom: 2em;
-        margin-top: 1.5em;
     }
     section:nth-child(odd) {
         text-align: center;
