@@ -139,3 +139,35 @@ footer p {
     font-size: 12px !important;
     color: #ccc;
 }
+
+
+/* the great media query */
+@media  (max-width: 1024px) {
+
+}
+@media  (max-width: 720px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1 1 auto;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        width: 100%;
+        margin: auto;
+        min-height: 70vh;
+    }
+    section .text {
+        max-width: 500px;
+    }
+    section .text > * + * {  
+        margin-bottom: 2em;
+        margin-top: 1.5em;
+    }
+    section:nth-child(odd) {
+        text-align: center;
+    }
+    section:nth-child(even) {
+        text-align: center;
+    }
+}
