@@ -153,10 +153,10 @@ footer p {
 
 /* the great media query */
 
-@media  (max-width: 920px) {
+@media  (max-width: 720px) {
     body {
-        background-position-y: right;
-        background-position-x: right;
+        background-position-y: 70px;
+        background-position-x: 340px;
         background-size: 55%;
     }
     .hero {
