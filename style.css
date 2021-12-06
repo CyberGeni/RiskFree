@@ -31,7 +31,6 @@ h1 {
 /* body */
 
 body {
-    
     color: white;
     width: 100%;
     background-color: #2b193d;   
@@ -54,6 +53,7 @@ header {
     align-items: center;
     justify-content: space-between;
     min-height: 70vh;
+    margin-bottom: 2em;
 }
 
 .hero-text > * + * {
@@ -127,15 +127,16 @@ section:nth-child(even) {
     margin-right: 0;
 }
 aside {
-    margin: 3em 0;
+    margin: 1em 0;
 }
 aside > * + * {
     margin-top: 0.7em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 footer p {
     display: flex;
     justify-content: center;
+    margin: auto;
     width: 100%;
     font-size: 12px !important;
     color: #ccc;
@@ -144,7 +145,19 @@ footer p {
 
 /* the great media query */
 
-@media  (max-width: 720px) {
+@media  (max-width: 920px) {
+    body {
+        background-position-y: right;
+        background-position-x: right;
+        background-size: 55%;
+    }
+    .hero {
+        display: flex;
+        justify-content: space-around;
+    }
+    .hero-image img {
+        display: none;
+    }
     section {
         align-items: center;
         justify-content: center;
