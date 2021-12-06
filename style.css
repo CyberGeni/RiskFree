@@ -52,7 +52,10 @@ main {
     margin: auto;
 }
 header {
-    line-height: 120px;
+    line-height: 100px;
+}
+header img {
+    width: 160px;
 }
 .hero {
     display: flex;
